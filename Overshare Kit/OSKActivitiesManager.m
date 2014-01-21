@@ -28,6 +28,7 @@
 #import "OSKInstapaperActivity.h"
 #import "OSKReadingListActivity.h"
 #import "OSKOmnifocusActivity.h"
+#import "OSKPhoneActivity.h"
 #import "OSKPinboardActivity.h"
 #import "OSKPocketActivity.h"
 #import "OSKReadabilityActivity.h"
@@ -172,7 +173,12 @@ static NSString * OSKActivitiesManagerPersistentExclusionsKey = @"OSKActivitiesM
                                                    excludedActivityTypes:excludedActivityTypes
                                                        requireOperations:requireOperations];
         }
-        
+        else if ([item.itemType isEqualToString:OSKShareableContentItemType_Phone]) { //
+          activitiesToAdd = [self builtInActivitiesForPhoneItem:(OSKPhoneContentItem *)item
+                                                   excludedActivityTypes:excludedActivityTypes
+                                                       requireOperations:requireOperations];
+        }
+      
         [validActivities addObjectsFromArray:activitiesToAdd];
         
         for (id activityClass in bespokeActivities) {
@@ -245,6 +251,10 @@ static NSString * OSKActivitiesManagerPersistentExclusionsKey = @"OSKActivitiesM
     if (content.passwordSearchItem) { [sortedItems addObject:content.passwordSearchItem]; }
     additionals = [self contentItemsOfType:OSKShareableContentItemType_PasswordManagementAppSearch inArray:content.additionalItems];
     [sortedItems addObjectsFromArray:additionals];
+  
+    if (content.phoneItem) { [sortedItems addObject:content.phoneItem]; }
+    additionals = [self contentItemsOfType:OSKShareableContentItemType_Phone inArray:content.additionalItems];
+    [sortedItems addObjectsFromArray:additionals];
 
     return sortedItems;
 }
@@ -301,6 +311,19 @@ static NSString * OSKActivitiesManagerPersistentExclusionsKey = @"OSKActivitiesM
     if (message) { [activities addObject:message]; }
     
     return activities;
+}
+
+- (NSArray *)builtInActivitiesForPhoneItem:(OSKPhoneContentItem *)item excludedActivityTypes:(NSArray *)excludedActivityTypes requireOperations:(BOOL)requireOperations {
+  NSMutableArray *activities = [[NSMutableArray alloc] init];
+  
+  OSKPhoneActivity *message = [self validActivityForType:[OSKPhoneActivity activityType]
+                                                 class:[OSKPhoneActivity class]
+                                         excludedTypes:excludedActivityTypes
+                                     requireOperations:requireOperations
+                                                  item:item];
+  if (message) { [activities addObject:message]; }
+  
+  return activities;
 }
 
 - (NSArray *)builtInActivitiesForEmailItem:(OSKEmailContentItem *)item excludedActivityTypes:(NSArray *)excludedActivityTypes requireOperations:(BOOL)requireOperations {

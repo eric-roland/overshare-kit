@@ -38,7 +38,10 @@
     OSKToDoListEntryContentItem *toDoList = [[OSKToDoListEntryContentItem alloc] init];
     toDoList.title = text;
     content.toDoListItem = toDoList;
-    
+  
+    OSKPhoneContentItem *phoneItem = [[OSKPhoneContentItem alloc] init];
+    content.phoneItem = phoneItem;
+  
     OSKAirDropContentItem *airDrop = [[OSKAirDropContentItem alloc] init];
     airDrop.items = @[text];
     content.airDropItem = airDrop;
@@ -73,7 +76,10 @@
     OSKSMSContentItem *smsItem = [[OSKSMSContentItem alloc] init];
     smsItem.body = absoluteString;
     content.smsItem = smsItem;
-    
+  
+    OSKPhoneContentItem *phoneItem = [[OSKPhoneContentItem alloc] init];
+    content.phoneItem = phoneItem;
+  
     OSKReadLaterContentItem *readLater = [[OSKReadLaterContentItem alloc] init];
     readLater.url = url;
     content.readLaterItem = readLater;
@@ -140,7 +146,10 @@
     smsItem.body = microblogPost.text;
     smsItem.attachments = images;
     content.smsItem = smsItem;
-    
+  
+    OSKPhoneContentItem *phoneItem = [[OSKPhoneContentItem alloc] init];
+    content.phoneItem = phoneItem;
+  
     OSKReadLaterContentItem *readLater = [[OSKReadLaterContentItem alloc] init];
     readLater.url = [NSURL URLWithString:canonicalURL];
     readLater.title = [NSString stringWithFormat:@"Post by %@", authorName];

@@ -36,6 +36,7 @@
 #import "OSKPresentationManager_Protected.h"
 #import "UIViewController+OSKUtilities.h"
 #import "UIColor+OSKUtility.h"
+#import "OSKPhoneActivity.h"
 
 NSString * const OSKPresentationOption_ActivityCompletionHandler = @"OSKPresentationOption_ActivityCompletionHandler";
 NSString * const OSKPresentationOption_PresentationEndingHandler = @"OSKPresentationOption_PresentationEndingHandler";
@@ -343,11 +344,15 @@ willRepositionPopoverToRect:(inout CGRect *)rect
 #pragma mark - Activity Sheet Delegate
 
 - (void)activitySheet:(OSKActivitySheetViewController *)viewController didSelectActivity:(OSKActivity *)activity {
-
-    [self _proceedWithSession:viewController.session
-             selectedActivity:activity
-     presentingViewController:self.presentingViewController
-            popoverController:self.popoverController];
+    if ([activity.contentItem.itemType isEqualToString:OSKShareableContentItemType_Phone]) {
+      OSKPhoneContentItem *contentItem = (OSKPhoneContentItem*)activity.contentItem;
+      [[UIApplication sharedApplication] openURL:contentItem.url];
+    } else {
+      [self _proceedWithSession:viewController.session
+               selectedActivity:activity
+       presentingViewController:self.presentingViewController
+              popoverController:self.popoverController];
+    }
 }
 
 - (void)activitySheetDidCancel:(OSKActivitySheetViewController *)viewController {

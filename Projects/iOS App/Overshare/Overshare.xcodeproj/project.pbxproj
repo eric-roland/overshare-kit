@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0712928E188F0666003EDE22 /* OSKPhoneActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0712928D188F0666003EDE22 /* OSKPhoneActivity.m */; };
+		07129293188F0E1F003EDE22 /* ADNLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 07129290188F0E1E003EDE22 /* ADNLogin.m */; };
+		07129294188F0E1F003EDE22 /* ADNPassportLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07129292188F0E1E003EDE22 /* ADNPassportLaunchView.m */; };
+		071292A5188F0E4F003EDE22 /* PocketAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0712929C188F0E4F003EDE22 /* PocketAPI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		071292A6188F0E4F003EDE22 /* PocketAPILogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0712929F188F0E4F003EDE22 /* PocketAPILogin.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		071292A7188F0E4F003EDE22 /* PocketAPIOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 071292A1188F0E4F003EDE22 /* PocketAPIOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		071292A8188F0E4F003EDE22 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 071292A4188F0E4F003EDE22 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7F19F8FE181F227300E5EA52 /* osk-iap-badge-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F19F8FB181F227300E5EA52 /* osk-iap-badge-60@2x.png */; };
 		7F19F8FF181F227300E5EA52 /* osk-iap-badge-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F19F8FC181F227300E5EA52 /* osk-iap-badge-76.png */; };
 		7F19F900181F227300E5EA52 /* osk-iap-badge-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F19F8FD181F227300E5EA52 /* osk-iap-badge-76@2x.png */; };
@@ -32,12 +39,6 @@
 		7F55A30018425C46004A3BCC /* OSKSessionController_Pad.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F55A2FA18425C46004A3BCC /* OSKSessionController_Pad.m */; };
 		7F55A30118425C46004A3BCC /* OSKSessionController_Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F55A2FC18425C46004A3BCC /* OSKSessionController_Phone.m */; };
 		7F55A30218425C46004A3BCC /* OSKSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F55A2FE18425C46004A3BCC /* OSKSessionController.m */; };
-		7F75BF311821587E00D3681E /* ADNLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F75BF2E1821587E00D3681E /* ADNLogin.m */; };
-		7F75BF321821587E00D3681E /* ADNPassportLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F75BF301821587E00D3681E /* ADNPassportLaunchView.m */; };
-		7F75BF3D1821588700D3681E /* PocketAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F75BF341821588700D3681E /* PocketAPI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7F75BF3E1821588700D3681E /* PocketAPILogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F75BF371821588700D3681E /* PocketAPILogin.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7F75BF3F1821588700D3681E /* PocketAPIOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F75BF391821588700D3681E /* PocketAPIOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7F75BF401821588700D3681E /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F75BF3C1821588700D3681E /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7F77F4261822F60B0019452C /* osk-iconMask-bw-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F77F4251822F60B0019452C /* osk-iconMask-bw-29.png */; };
 		7F77F4281822F6D10019452C /* osk-appDotNetIcon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F77F4271822F6D10019452C /* osk-appDotNetIcon-29.png */; };
 		7F77F42B1822F7760019452C /* osk-pinboardIcon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F77F4291822F7760019452C /* osk-pinboardIcon-29.png */; };
@@ -231,6 +232,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0712928C188F0666003EDE22 /* OSKPhoneActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSKPhoneActivity.h; sourceTree = "<group>"; };
+		0712928D188F0666003EDE22 /* OSKPhoneActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSKPhoneActivity.m; sourceTree = "<group>"; };
+		0712928F188F0E1E003EDE22 /* ADNLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNLogin.h; sourceTree = "<group>"; };
+		07129290188F0E1E003EDE22 /* ADNLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNLogin.m; sourceTree = "<group>"; };
+		07129291188F0E1E003EDE22 /* ADNPassportLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNPassportLaunchView.h; sourceTree = "<group>"; };
+		07129292188F0E1E003EDE22 /* ADNPassportLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNPassportLaunchView.m; sourceTree = "<group>"; };
+		0712929B188F0E4F003EDE22 /* PocketAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketAPI.h; sourceTree = "<group>"; };
+		0712929C188F0E4F003EDE22 /* PocketAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketAPI.m; sourceTree = "<group>"; };
+		0712929D188F0E4F003EDE22 /* PocketAPI+NSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PocketAPI+NSOperation.h"; sourceTree = "<group>"; };
+		0712929E188F0E4F003EDE22 /* PocketAPILogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketAPILogin.h; sourceTree = "<group>"; };
+		0712929F188F0E4F003EDE22 /* PocketAPILogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketAPILogin.m; sourceTree = "<group>"; };
+		071292A0188F0E4F003EDE22 /* PocketAPIOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketAPIOperation.h; sourceTree = "<group>"; };
+		071292A1188F0E4F003EDE22 /* PocketAPIOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketAPIOperation.m; sourceTree = "<group>"; };
+		071292A2188F0E4F003EDE22 /* PocketAPITypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketAPITypes.h; sourceTree = "<group>"; };
+		071292A3188F0E4F003EDE22 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		071292A4188F0E4F003EDE22 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		7F19F8FB181F227300E5EA52 /* osk-iap-badge-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osk-iap-badge-60@2x.png"; sourceTree = "<group>"; };
 		7F19F8FC181F227300E5EA52 /* osk-iap-badge-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osk-iap-badge-76.png"; sourceTree = "<group>"; };
 		7F19F8FD181F227300E5EA52 /* osk-iap-badge-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osk-iap-badge-76@2x.png"; sourceTree = "<group>"; };
@@ -270,20 +287,6 @@
 		7F55A2FC18425C46004A3BCC /* OSKSessionController_Phone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSKSessionController_Phone.m; sourceTree = "<group>"; };
 		7F55A2FD18425C46004A3BCC /* OSKSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSKSessionController.h; sourceTree = "<group>"; };
 		7F55A2FE18425C46004A3BCC /* OSKSessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSKSessionController.m; sourceTree = "<group>"; };
-		7F75BF2D1821587E00D3681E /* ADNLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNLogin.h; path = "../../../Dependencies/ADNLogin-SDK/SDK/ADNLogin.h"; sourceTree = "<group>"; };
-		7F75BF2E1821587E00D3681E /* ADNLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNLogin.m; path = "../../../Dependencies/ADNLogin-SDK/SDK/ADNLogin.m"; sourceTree = "<group>"; };
-		7F75BF2F1821587E00D3681E /* ADNPassportLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNPassportLaunchView.h; path = "../../../Dependencies/ADNLogin-SDK/SDK/ADNPassportLaunchView.h"; sourceTree = "<group>"; };
-		7F75BF301821587E00D3681E /* ADNPassportLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNPassportLaunchView.m; path = "../../../Dependencies/ADNLogin-SDK/SDK/ADNPassportLaunchView.m"; sourceTree = "<group>"; };
-		7F75BF331821588700D3681E /* PocketAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PocketAPI.h; path = "../../../Dependencies/Pocket-SDK/SDK/PocketAPI.h"; sourceTree = "<group>"; };
-		7F75BF341821588700D3681E /* PocketAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PocketAPI.m; path = "../../../Dependencies/Pocket-SDK/SDK/PocketAPI.m"; sourceTree = "<group>"; };
-		7F75BF351821588700D3681E /* PocketAPI+NSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PocketAPI+NSOperation.h"; path = "../../../Dependencies/Pocket-SDK/SDK/PocketAPI+NSOperation.h"; sourceTree = "<group>"; };
-		7F75BF361821588700D3681E /* PocketAPILogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PocketAPILogin.h; path = "../../../Dependencies/Pocket-SDK/SDK/PocketAPILogin.h"; sourceTree = "<group>"; };
-		7F75BF371821588700D3681E /* PocketAPILogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PocketAPILogin.m; path = "../../../Dependencies/Pocket-SDK/SDK/PocketAPILogin.m"; sourceTree = "<group>"; };
-		7F75BF381821588700D3681E /* PocketAPIOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PocketAPIOperation.h; path = "../../../Dependencies/Pocket-SDK/SDK/PocketAPIOperation.h"; sourceTree = "<group>"; };
-		7F75BF391821588700D3681E /* PocketAPIOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PocketAPIOperation.m; path = "../../../Dependencies/Pocket-SDK/SDK/PocketAPIOperation.m"; sourceTree = "<group>"; };
-		7F75BF3A1821588700D3681E /* PocketAPITypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PocketAPITypes.h; path = "../../../Dependencies/Pocket-SDK/SDK/PocketAPITypes.h"; sourceTree = "<group>"; };
-		7F75BF3B1821588700D3681E /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFHFKeychainUtils.h; path = "../../../Dependencies/Pocket-SDK/SDK/SFHFKeychainUtils.h"; sourceTree = "<group>"; };
-		7F75BF3C1821588700D3681E /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFHFKeychainUtils.m; path = "../../../Dependencies/Pocket-SDK/SDK/SFHFKeychainUtils.m"; sourceTree = "<group>"; };
 		7F77F4251822F60B0019452C /* osk-iconMask-bw-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osk-iconMask-bw-29.png"; sourceTree = "<group>"; };
 		7F77F4271822F6D10019452C /* osk-appDotNetIcon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osk-appDotNetIcon-29.png"; sourceTree = "<group>"; };
 		7F77F4291822F7760019452C /* osk-pinboardIcon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osk-pinboardIcon-29.png"; sourceTree = "<group>"; };
@@ -589,6 +592,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07129288188F0514003EDE22 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				0712928C188F0666003EDE22 /* OSKPhoneActivity.h */,
+				0712928D188F0666003EDE22 /* OSKPhoneActivity.m */,
+			);
+			name = Phone;
+			sourceTree = "<group>";
+		};
 		7F43DEB418217964003BE9B6 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
@@ -895,6 +907,7 @@
 		7FEE78FF181ED969000F684A /* Activities (Subclasses) */ = {
 			isa = PBXGroup;
 			children = (
+				07129288188F0514003EDE22 /* Phone */,
 				7FEE78FD181ED94F000F684A /* 1Password (Browser) */,
 				7FEE78FE181ED95D000F684A /* 1Password (Search) */,
 				7FEE7905181ED9DB000F684A /* App.net */,
@@ -1306,16 +1319,16 @@
 		7FEE7923181EDC84000F684A /* Pocket */ = {
 			isa = PBXGroup;
 			children = (
-				7F75BF331821588700D3681E /* PocketAPI.h */,
-				7F75BF341821588700D3681E /* PocketAPI.m */,
-				7F75BF351821588700D3681E /* PocketAPI+NSOperation.h */,
-				7F75BF361821588700D3681E /* PocketAPILogin.h */,
-				7F75BF371821588700D3681E /* PocketAPILogin.m */,
-				7F75BF381821588700D3681E /* PocketAPIOperation.h */,
-				7F75BF391821588700D3681E /* PocketAPIOperation.m */,
-				7F75BF3A1821588700D3681E /* PocketAPITypes.h */,
-				7F75BF3B1821588700D3681E /* SFHFKeychainUtils.h */,
-				7F75BF3C1821588700D3681E /* SFHFKeychainUtils.m */,
+				0712929B188F0E4F003EDE22 /* PocketAPI.h */,
+				0712929C188F0E4F003EDE22 /* PocketAPI.m */,
+				0712929D188F0E4F003EDE22 /* PocketAPI+NSOperation.h */,
+				0712929E188F0E4F003EDE22 /* PocketAPILogin.h */,
+				0712929F188F0E4F003EDE22 /* PocketAPILogin.m */,
+				071292A0188F0E4F003EDE22 /* PocketAPIOperation.h */,
+				071292A1188F0E4F003EDE22 /* PocketAPIOperation.m */,
+				071292A2188F0E4F003EDE22 /* PocketAPITypes.h */,
+				071292A3188F0E4F003EDE22 /* SFHFKeychainUtils.h */,
+				071292A4188F0E4F003EDE22 /* SFHFKeychainUtils.m */,
 			);
 			name = Pocket;
 			sourceTree = "<group>";
@@ -1323,10 +1336,10 @@
 		7FEE7924181EDC88000F684A /* ADNLogin */ = {
 			isa = PBXGroup;
 			children = (
-				7F75BF2D1821587E00D3681E /* ADNLogin.h */,
-				7F75BF2E1821587E00D3681E /* ADNLogin.m */,
-				7F75BF2F1821587E00D3681E /* ADNPassportLaunchView.h */,
-				7F75BF301821587E00D3681E /* ADNPassportLaunchView.m */,
+				0712928F188F0E1E003EDE22 /* ADNLogin.h */,
+				07129290188F0E1E003EDE22 /* ADNLogin.m */,
+				07129291188F0E1E003EDE22 /* ADNPassportLaunchView.h */,
+				07129292188F0E1E003EDE22 /* ADNPassportLaunchView.m */,
 			);
 			name = ADNLogin;
 			sourceTree = "<group>";
@@ -1526,17 +1539,15 @@
 				7FEE77AD181ED8EF000F684A /* OSKCopyToPasteboardActivity.m in Sources */,
 				7FEE77B4181ED8EF000F684A /* OSKInMemoryImageCache.m in Sources */,
 				7FEE77A3181ED8EF000F684A /* OSKADNLoginManager.m in Sources */,
-				7F75BF3D1821588700D3681E /* PocketAPI.m in Sources */,
 				7FEE77BB181ED8EF000F684A /* OSKManagedAccountStore.m in Sources */,
 				7FEE779A181ED8EF000F684A /* OSKActivityCollectionViewCell.m in Sources */,
+				07129294188F0E1F003EDE22 /* ADNPassportLaunchView.m in Sources */,
 				7FEE77D4181ED8EF000F684A /* OSKTwitterUtility.m in Sources */,
 				7FEE77DA181ED8EF000F684A /* UIView+OSKUtilities.m in Sources */,
 				7FEE77BC181ED8EF000F684A /* OSKMessageComposeViewController.m in Sources */,
 				7FEE77BA181ED8EF000F684A /* OSKManagedAccountCredential.m in Sources */,
-				7F75BF321821587E00D3681E /* ADNPassportLaunchView.m in Sources */,
 				7FCD027F18539735005C5931 /* OSKActivityToggleCell.m in Sources */,
 				7FEE778C181ED8EF000F684A /* NSData+OSKDerp.m in Sources */,
-				7F75BF311821587E00D3681E /* ADNLogin.m in Sources */,
 				7FEE77D0181ED8EF000F684A /* OSKThingsActivity.m in Sources */,
 				7FEE77B9181ED8EF000F684A /* OSKManagedAccount.m in Sources */,
 				7F43DEB818217986003BE9B6 /* OSKFacebookPublishingViewController.m in Sources */,
@@ -1548,6 +1559,7 @@
 				7FEE77A6181ED8EF000F684A /* OSKAlertView.m in Sources */,
 				7F19F918181FE99A00E5EA52 /* UIImage+OSKUtilities.m in Sources */,
 				7FEE77CC181ED8EF000F684A /* OSKShareableContentItem.m in Sources */,
+				071292A8188F0E4F003EDE22 /* SFHFKeychainUtils.m in Sources */,
 				7FEE77A5181ED8EF000F684A /* OSKAirDropViewController.m in Sources */,
 				7FEE77C0181ED8EF000F684A /* OSKOAuthUtility.m in Sources */,
 				7FEE77D1181ED8EF000F684A /* OSKTwitterActivity.m in Sources */,
@@ -1557,9 +1569,10 @@
 				7F78E9AC1820E5630042CF02 /* OSKPocketAccountViewController.m in Sources */,
 				7FEE77AE181ED8EF000F684A /* OSKEmailActivity.m in Sources */,
 				7FEE77B7181ED8EF000F684A /* OSKKeychainUtility.m in Sources */,
+				071292A6188F0E4F003EDE22 /* PocketAPILogin.m in Sources */,
 				7FE467391821F4010054D2BC /* OSKAccountTypeCell.m in Sources */,
 				7FEE778F181ED8EF000F684A /* NSHTTPURLResponse+OSKUtilities.m in Sources */,
-				7F75BF3E1821588700D3681E /* PocketAPILogin.m in Sources */,
+				0712928E188F0666003EDE22 /* OSKPhoneActivity.m in Sources */,
 				7FEE77C7181ED8EF000F684A /* OSKReadabilityActivity.m in Sources */,
 				7F55A30218425C46004A3BCC /* OSKSessionController.m in Sources */,
 				7FEE77C1181ED8EF000F684A /* OSKOmnifocusActivity.m in Sources */,
@@ -1580,12 +1593,15 @@
 				7F43DEAD18215916003BE9B6 /* SampleTimelineViewController.m in Sources */,
 				7FEE7792181ED8EF000F684A /* NSString+OSKDerp.m in Sources */,
 				7FEE77A8181ED8EF000F684A /* OSKAppDotNetAuthenticationViewController.m in Sources */,
+				071292A5188F0E4F003EDE22 /* PocketAPI.m in Sources */,
+				071292A7188F0E4F003EDE22 /* PocketAPIOperation.m in Sources */,
 				7F1DA9E3183C6B280082356D /* OSKLinkShorteningUtility.m in Sources */,
 				7FEE77D5181ED8EF000F684A /* OSKUsernamePasswordCell.m in Sources */,
 				7FEE77DB181ED8EF000F684A /* UIViewController+OSKUtilities.m in Sources */,
 				7FEE763F181ED83D000F684A /* main.m in Sources */,
 				7FEE779F181ED8EF000F684A /* OSKActivityIndicatorItem.m in Sources */,
 				7FEE778D181ED8EF000F684A /* NSDate+OSK_ISO8601.m in Sources */,
+				07129293188F0E1F003EDE22 /* ADNLogin.m in Sources */,
 				7FEE77CF181ED8EF000F684A /* OSKTextView.m in Sources */,
 				7FEE77BD181ED8EF000F684A /* OSKMicroblogPublishingViewController.m in Sources */,
 				7F19F92A1820A34F00E5EA52 /* OSKAccountManagementViewController.m in Sources */,
@@ -1593,10 +1609,8 @@
 				7FEE77CB181ED8EF000F684A /* OSKShareableContent.m in Sources */,
 				7FEE7791181ED8EF000F684A /* NSString+OSK_UUID.m in Sources */,
 				7FEE77C3181ED8EF000F684A /* OSKPinboardActivity.m in Sources */,
-				7F75BF401821588700D3681E /* SFHFKeychainUtils.m in Sources */,
 				7FEE77D8181ED8EF000F684A /* UIColor+OSKUtility.m in Sources */,
 				7FEE77A4181ED8EF000F684A /* OSKAirDropActivity.m in Sources */,
-				7F75BF3F1821588700D3681E /* PocketAPIOperation.m in Sources */,
 				7FEE77A7181ED8EF000F684A /* OSKAppDotNetActivity.m in Sources */,
 				7FEE7798181ED8EF000F684A /* OSKActivitiesManager.m in Sources */,
 				7FEE77D3181ED8EF000F684A /* OSKTwitterTextEntity.m in Sources */,

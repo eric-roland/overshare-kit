@@ -20,6 +20,7 @@ extern NSString * const OSKShareableContentItemType_WebBrowser;
 extern NSString * const OSKShareableContentItemType_PasswordManagementAppSearch;
 extern NSString * const OSKShareableContentItemType_ToDoListEntry;
 extern NSString * const OSKShareableContentItemType_AirDrop;
+extern NSString * const OSKShareableContentItemType_Phone;
 
 ///---------------------------
 /// @name Abstract Base Class
@@ -320,6 +321,22 @@ extern NSString * const OSKShareableContentItemType_AirDrop;
  Optional array of tags for the saved item.
  */
 @property (copy, nonatomic) NSArray *tags;
+
+@end
+
+///--------------------------------------------
+/// @name phone
+///--------------------------------------------
+
+/**
+ Content that can be opened in another app's web browser.
+ */
+@interface OSKPhoneContentItem : OSKShareableContentItem
+
+/**
+ The url to opened. Required.
+ */
+@property (copy, nonatomic) NSURL *url;
 
 @end
 

@@ -46,6 +46,7 @@
 #import "OSKShareableContent.h"
 #import "OSKShareableContentItem.h"
 #import "OSKSMSActivity.h"
+#import "OSKPhoneActivity.h"
 #import "OSKSystemAccountStore.h"
 #import "OSKThingsActivity.h"
 #import "OSKTwitterActivity.h"

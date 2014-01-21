@@ -20,6 +20,7 @@
 @class OSKToDoListEntryContentItem;
 @class OSKPasswordManagementAppSearchContentItem;
 @class OSKAirDropContentItem;
+@class OSKPhoneContentItem;
 
 /**
  `OSKShareableContent` is the highest-level Overshare Kit model object for
@@ -109,6 +110,11 @@
  Content for searching a password storage app, like 1Password.
  */
 @property (strong, nonatomic) OSKPasswordManagementAppSearchContentItem *passwordSearchItem;
+
+/**
+ Content for making a phone call.
+ */
+@property (strong, nonatomic) OSKPhoneContentItem *phoneItem;
 
 /**
  Content shareable via AirDrop.

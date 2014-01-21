@@ -21,6 +21,7 @@ NSString * const OSKShareableContentItemType_WebBrowser = @"OSKShareableContentI
 NSString * const OSKShareableContentItemType_PasswordManagementAppSearch = @"OSKShareableContentItemType_PasswordManagementAppSearch";
 NSString * const OSKShareableContentItemType_ToDoListEntry = @"OSKShareableContentItemType_ToDoListEntry";
 NSString * const OSKShareableContentItemType_AirDrop = @"OSKShareableContentItemType_AirDrop";
+NSString * const OSKShareableContentItemType_Phone = @"OSKShareableContentItemType_Phone";
 
 @implementation OSKShareableContentItem
 
@@ -131,6 +132,14 @@ NSString * const OSKShareableContentItemType_AirDrop = @"OSKShareableContentItem
 
 - (NSString *)itemType {
     return OSKShareableContentItemType_AirDrop;
+}
+
+@end
+
+@implementation OSKPhoneContentItem
+
+- (NSString *)itemType {
+  return OSKShareableContentItemType_Phone;
 }
 
 @end

@@ -26,6 +26,7 @@
 #import "OSKFacebookActivity.h"
 #import "OSKInstapaperActivity.h"
 #import "OSKOmnifocusActivity.h"
+#import "OSKPhoneActivity.h"
 #import "OSKPinboardActivity.h"
 #import "OSKPocketActivity.h"
 #import "OSKReadabilityActivity.h"
