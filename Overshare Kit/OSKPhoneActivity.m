@@ -40,9 +40,9 @@
 + (UIImage *)iconForIdiom:(UIUserInterfaceIdiom)idiom {
   UIImage *image = nil;
   if (idiom == UIUserInterfaceIdiomPhone) {
-    image = [UIImage imageNamed:@"osk-mailIcon-60.png"];
+    image = [UIImage imageNamed:@"osk-phone-60.png"];
   } else {
-    image = [UIImage imageNamed:@"osk-mailIcon-76.png"];
+    image = [UIImage imageNamed:@"osk-phone-76.png"];
   }
   return image;
 }

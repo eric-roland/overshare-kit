@@ -136,6 +136,9 @@
 		071292B0188F0E67003EDE22 /* PocketAPITypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketAPITypes.h; sourceTree = "<group>"; };
 		071292B1188F0E67003EDE22 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
 		071292B2188F0E67003EDE22 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		07A0FA7D1892A7E300E2085E /* osk-phone-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "osk-phone-60@2x.png"; path = "../../../../../../Downloads/osk-phone-60@2x.png"; sourceTree = "<group>"; };
+		07A0FA7E1892A7EF00E2085E /* osk-phone-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "osk-phone-76.png"; path = "../../../../../../Downloads/osk-phone-76.png"; sourceTree = "<group>"; };
+		07A0FA7F1892A7FB00E2085E /* osk-phone-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "osk-phone-76@2x.png"; path = "../../../../../../Downloads/osk-phone-76@2x.png"; sourceTree = "<group>"; };
 		7F19F901181F228200E5EA52 /* osk-iap-badge-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osk-iap-badge-60@2x.png"; sourceTree = "<group>"; };
 		7F19F902181F228200E5EA52 /* osk-iap-badge-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osk-iap-badge-76.png"; sourceTree = "<group>"; };
 		7F19F903181F228200E5EA52 /* osk-iap-badge-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osk-iap-badge-76@2x.png"; sourceTree = "<group>"; };
@@ -757,6 +760,9 @@
 		7FEE77DD181ED8FE000F684A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				07A0FA7F1892A7FB00E2085E /* osk-phone-76@2x.png */,
+				07A0FA7E1892A7EF00E2085E /* osk-phone-76.png */,
+				07A0FA7D1892A7E300E2085E /* osk-phone-60@2x.png */,
 				7FA91AEB1889F54800A5DF9B /* ReadingList-Icon-29.png */,
 				7FA91AEC1889F54800A5DF9B /* ReadingList-Icon-29@2x.png */,
 				7FA91AED1889F54800A5DF9B /* ReadingList-Icon-60.png */,
