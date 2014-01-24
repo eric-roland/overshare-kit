@@ -26,7 +26,7 @@
 }
 
 + (BOOL)isAvailable {
-  return YES;
+  return [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"tel://"]];
 }
 
 + (NSString *)activityType {
