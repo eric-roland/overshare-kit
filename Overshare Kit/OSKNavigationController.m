@@ -34,13 +34,7 @@
     OSKPresentationManager *presentationManager = [OSKPresentationManager sharedInstance];
     self.navigationBar.tintColor = presentationManager.color_action;
     
-    UIBarStyle barStyle;
-    if (presentationManager.sheetStyle == OSKActivitySheetViewControllerStyle_Dark) {
-        barStyle = UIBarStyleBlack;
-    } else {
-        barStyle = UIBarStyleDefault;
-    }
-    [self.navigationBar setBarStyle:barStyle];
+    [self.navigationBar setBarStyle:UIBarStyleBlack];
     
     UIFontDescriptor *normalDescriptor = [presentationManager normalFontDescriptor];
     UIFontDescriptor *boldDescriptor = [presentationManager boldFontDescriptor];
